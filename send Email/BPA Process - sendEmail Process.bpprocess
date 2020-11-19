@@ -1,0 +1,25 @@
+﻿<process name="sendEmail Process" version="1.0" bpversion="6.9.0.26970" narrative="send attachment and html body as email process" byrefcollection="true" preferredid="6da230a6-445a-45f3-bcdf-fbf101251313">
+  <view>
+    <camerax>0</camerax>
+    <cameray>0</cameray>
+    <zoom version="2">1.25</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <stage stageid="c0c56fac-ac99-49e3-9dfd-a9e621e7880b" name="Start" type="Start">
+    <display x="15" y="-105" />
+    <onsuccess>eb7f5325-f434-4d6a-b7f9-b1e41bd65ade</onsuccess>
+  </stage>
+  <stage stageid="00d17c46-5ded-46de-bec5-05d7790b31c1" name="End" type="End">
+    <display x="15" y="90" />
+  </stage>
+  <stage stageid="a7fad764-603d-4887-9169-4548f6a23afb" name="Stage1" type="ProcessInfo">
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="eb7f5325-f434-4d6a-b7f9-b1e41bd65ade" name="sendEmailOb::Send attachment" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="-15" />
+    <onsuccess>00d17c46-5ded-46de-bec5-05d7790b31c1</onsuccess>
+    <resource object="sendEmailOb" action="Send attachment" />
+  </stage>
+</process>

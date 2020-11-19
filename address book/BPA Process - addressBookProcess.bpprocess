@@ -1,0 +1,37 @@
+﻿<process name="addressBookProcess" version="1.0" bpversion="6.9.0.26970" narrative="addressBook process " byrefcollection="true" preferredid="aa956504-2c85-40b0-930b-e54d5314cfa5">
+  <view>
+    <camerax>0</camerax>
+    <cameray>0</cameray>
+    <zoom version="2">1.25</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <stage stageid="74c9484a-49d4-4659-83a8-0bde5ad51a55" name="Start" type="Start">
+    <display x="15" y="-105" />
+    <onsuccess>fd13c365-1073-48c0-9938-6d1c3b8e7635</onsuccess>
+  </stage>
+  <stage stageid="a83e1439-9f19-417d-9796-5edf383b94d3" name="End" type="End">
+    <display x="15" y="135" />
+  </stage>
+  <stage stageid="30005891-5708-45b0-a259-b97cdc149725" name="Stage1" type="ProcessInfo">
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="fd13c365-1073-48c0-9938-6d1c3b8e7635" name="addressBookOb::Create, Read, Update" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="-45" />
+    <onsuccess>7218d2c4-801e-4958-89af-a1beccefd8a6</onsuccess>
+    <resource object="addressBookOb" action="Create, Read, Update" />
+  </stage>
+  <stage stageid="82a50768-0bd7-430c-8fb5-af7e7504c9af" name="addressBookOb::Delete" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="75" />
+    <onsuccess>a83e1439-9f19-417d-9796-5edf383b94d3</onsuccess>
+    <resource object="addressBookOb" action="Delete" />
+  </stage>
+  <stage stageid="7218d2c4-801e-4958-89af-a1beccefd8a6" name="retrive data by name" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="15" />
+    <onsuccess>82a50768-0bd7-430c-8fb5-af7e7504c9af</onsuccess>
+    <resource object="addressBookOb" action="get collection by name" />
+  </stage>
+</process>

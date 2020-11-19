@@ -1,0 +1,55 @@
+﻿<process name="flipkartProcess" version="1.0" bpversion="6.9.0.26970" narrative="retrieving data from flipkart" byrefcollection="true" preferredid="02659bbd-e2a9-4ea7-afcc-8665d7cb54a0" published="true">
+  <view>
+    <camerax>0</camerax>
+    <cameray>-4</cameray>
+    <zoom version="2">1.25</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <stage stageid="04dd3672-6bd0-42b6-87e1-6e7556eb330c" name="Start" type="Start">
+    <display x="15" y="-105" />
+    <onsuccess>fa60c24d-d7f9-4097-b395-8d9f058db746</onsuccess>
+  </stage>
+  <stage stageid="1f2d7740-51f4-450c-81a3-78306ae9fecb" name="End" type="End">
+    <display x="15" y="315" />
+  </stage>
+  <stage stageid="85b361a6-1d3a-4b49-8351-dfc0baaa63ed" name="Stage1" type="ProcessInfo">
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="fa60c24d-d7f9-4097-b395-8d9f058db746" name="flipkartObject::Launch" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="-45" />
+    <onsuccess>710ac1d2-444e-4989-88aa-52191ca314e8</onsuccess>
+    <resource object="flipkartObject" action="Launch" />
+  </stage>
+  <stage stageid="710ac1d2-444e-4989-88aa-52191ca314e8" name="flipkartObject::Search" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="15" />
+    <onsuccess>f9ffe808-f21e-48c9-aafa-1b92c01006d0</onsuccess>
+    <resource object="flipkartObject" action="Search" />
+  </stage>
+  <stage stageid="f9ffe808-f21e-48c9-aafa-1b92c01006d0" name="flipkartObject::write data in excel" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="75" />
+    <onsuccess>53397734-65f9-4ff8-89b1-304279c0dff5</onsuccess>
+    <resource object="flipkartObject" action="write data in excel" />
+  </stage>
+  <stage stageid="53397734-65f9-4ff8-89b1-304279c0dff5" name="flipkartObject::data verification" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="135" />
+    <onsuccess>0c8836bf-a223-426b-9a6d-5a905153524c</onsuccess>
+    <resource object="flipkartObject" action="data verification" />
+  </stage>
+  <stage stageid="0c8836bf-a223-426b-9a6d-5a905153524c" name="flipkartObject::insert in db" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="195" />
+    <onsuccess>acf14831-fad9-4aa9-b6c0-b8803e5b3e01</onsuccess>
+    <resource object="flipkartObject" action="insert in db" />
+  </stage>
+  <stage stageid="acf14831-fad9-4aa9-b6c0-b8803e5b3e01" name="flipkartObject::Get Color" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="255" />
+    <onsuccess>1f2d7740-51f4-450c-81a3-78306ae9fecb</onsuccess>
+    <resource object="flipkartObject" action="Get Color" />
+  </stage>
+</process>

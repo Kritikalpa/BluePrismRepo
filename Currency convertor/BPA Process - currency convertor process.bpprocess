@@ -1,0 +1,25 @@
+﻿<process name="currency convertor process" version="1.0" bpversion="6.9.0.26970" narrative="process for currency convertor" byrefcollection="true" preferredid="a52070af-988e-4849-a042-92c0cf34d4a1">
+  <view>
+    <camerax>0</camerax>
+    <cameray>42</cameray>
+    <zoom version="2">1.25</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <stage stageid="af57dfed-c089-4f47-9bf1-d94c7aff005f" name="Start" type="Start">
+    <display x="15" y="-105" />
+    <onsuccess>9909e988-272c-44a1-8a1a-817e68115498</onsuccess>
+  </stage>
+  <stage stageid="f400978f-c9f7-4429-8569-d78783cdeaca" name="End" type="End">
+    <display x="15" y="15" />
+  </stage>
+  <stage stageid="f35abba4-8464-40e4-971d-3b85fca331c4" name="Stage1" type="ProcessInfo">
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="9909e988-272c-44a1-8a1a-817e68115498" name="Currency Converter::Get The result" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="-45" />
+    <onsuccess>f400978f-c9f7-4429-8569-d78783cdeaca</onsuccess>
+    <resource object="Currency Converter" action="Get The result" />
+  </stage>
+</process>
